@@ -7,68 +7,87 @@
     <title>Home - Illumination</title>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="navbar__wrapper container">
-        <div class="logo__wrapper">
-          <img class="logo" src="./img/logo.png" alt="" />
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar__wrapper">
+            <!-- Logo & Menu -->
+            <img src="./img/logo.png" alt="" class="logo" />
+            <ul class="navbar__links">
+              <li><a href="">Home</a></li>
+              <li><a href="">Films</a></li>
+              <li><a href="">Careers</a></li>
+            </ul>
+            <div class="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
         </div>
-        <ul class="navbar__links">
-          <li><a class="navbar__select" href="">Home</a></li>
-          <li><a href="#">Studio</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-        <div class="burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </nav>
-    <!-- End Navbar -->
-
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero__wrapper">
-          <div class="hero__content">
-            <div class="hero__title">
+      </nav>
+    </header>
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <div class="hero__content">
+              <!-- Title & Desc -->
               <h1>ILLUMINATION</h1>
               <p><span>Entertainment</span></p>
               <p class="desc">Illumination, founded by Chris Meledandri in 2007, is one of the entertainment industry’s leading producers of event animated films.</p>
+              <!-- Social Button -->
+              <div class="hero__social">
+                <a href="#">
+                  <div class="social-box">
+                    <img src="./img/fb.png" alt="" />
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="social-box">
+                    <img src="./img/twitter.png" alt="" />
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="social-box">
+                    <img src="./img/ig.png" alt="" />
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="social-box">
+                    <img src="./img/linkin.png" alt="" />
+                  </div>
+                </a>
+              </div>
             </div>
-            <div class="hero__social">
-              <a href="#">
-                <div class="social__box">
-                  <img class="social__icon fb" src="./img/fb.png" alt="" />
-                </div>
-              </a>
-              <a href="#">
-                <div class="social__box">
-                  <img class="social__icon" src="./img/ig.png" alt="" />
-                </div>
-              </a>
-              <a href="#">
-                <div class="social__box">
-                  <img class="social__icon" src="./img/twitter.png" alt="" />
-                </div>
-              </a>
-              <a href="#">
-                <div class="social__box">
-                  <img class="social__icon" src="./img/linkin.png" alt="" />
-                </div>
-              </a>
-            </div>
-            <div class="hero__minions">
-              <img src="./img/minions.png" alt="" />
-            </div>
-          </div>
-          <div class="hero__background">
-            <img src="./img/hero-background.png" alt="" />
+            <!-- Background Hero -->
+            <div class="hero__image"></div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- End Hero -->
+      </section>
+      <!-- Premier Section -->
+      <section class="premier">
+        <div class="container">
+          <h2><span class="border-left"></span> Premier Now</h2>
+          <div class="premier_wrapper">
+            <div class="premier__content">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur distinctio sequi, at, id facilis aspernatur pariatur fugit nobis maxime repudiandae commodi incidunt enim quas officiis, atque deleniti quis adipisci eius?</p>
+            </div>
+            <div class="premier__grid__wrapper">
+              <div class="premier__grid">
+                <div class="premier__item items__1"></div>
+                <div class="premier__item items__2"></div>
+                <div class="premier__item items__3"></div>
+                <div class="premier__item items__4"></div>
+              </div>
+              <p class="desc">SING 2 NOW IN THEATERS AND ON DEMAND NOW</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
   </body>
 </html>
