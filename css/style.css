@@ -22,15 +22,12 @@ body {
 }
 
 h1,
-h2 {
-  font-weight: 500;
-}
-
+h2,
 h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 a {
@@ -130,12 +127,13 @@ img {
   padding: 10px 0;
   color: var(--dark-gray-color);
 }
-.hero__image {
+.hero__minions {
+  display: block;
   min-height: 294px;
   background-image: url("../img/minions.png");
   background-repeat: no-repeat;
   background-position: center bottom;
-  object-fit: cover;
+  margin-top: min(30vh, 200px);
 }
 .hero__social {
   display: flex;
@@ -157,7 +155,7 @@ img {
   content: "";
   display: inline-block;
   width: 3px;
-  height: 18px;
+  height: 14px;
   background-color: var(--yellow-color);
   border-radius: 3px;
 }
@@ -172,14 +170,22 @@ img {
   flex-direction: column;
   gap: 15px;
 }
+.premier__content .title {
+  letter-spacing: 3px;
+  margin: 20px 0;
+}
+.premier__content .desc {
+  line-height: 28px;
+}
 
 .premier__grid {
   display: grid;
-  grid-template-columns: repeat(3, 110px);
-  grid-auto-rows: minmax(110px, auto);
+  grid-template-columns: repeat(3, 100px);
+  grid-auto-rows: minmax(100px, auto);
   gap: 15px;
   margin: 0 auto;
-  padding: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .premier__item {
   background-color: gray;
@@ -217,9 +223,9 @@ img {
   grid-column: span 2;
 }
 
-.premier__grid__wrapper .desc {
-  letter-spacing: 3px;
+.premier_wrapper .title__img {
+  letter-spacing: 2px;
   color: var(--dark-gray-color);
   font-weight: 200;
-  font-size: 17px;
+  font-size: 15px;
 }
