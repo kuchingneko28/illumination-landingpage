@@ -133,7 +133,7 @@ img {
   background-image: url("../img/minions.png");
   background-repeat: no-repeat;
   background-position: center bottom;
-  margin-top: min(30vh, 200px);
+  margin-top: min(30vh, 100px);
 }
 .hero__social {
   display: flex;
@@ -171,6 +171,13 @@ img {
   flex-direction: column;
   gap: 15px;
 }
+.premier__wrapper .title__img {
+  letter-spacing: 2px;
+  text-align: center;
+  color: var(--dark-gray-color);
+  font-weight: 200;
+  font-size: 14px;
+}
 .premier__content .title {
   letter-spacing: 3px;
   margin: 20px 0;
@@ -184,7 +191,7 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 100px);
   grid-auto-rows: 100px;
-  gap: 15px;
+  gap: 10px;
   margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -193,6 +200,27 @@ img {
 .premier__item {
   border-radius: 12px;
 }
+
+.premier__button {
+  text-align: center;
+}
+.premier__content .ticket {
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+/* Button premier */
+.button {
+  text-align: center;
+  display: inline-block;
+  font-weight: 500;
+  padding: 8px 10px;
+  border-radius: 12px;
+  letter-spacing: 2px;
+  background-color: var(--yellow-color);
+  color: var(--dark-color);
+}
+
 .items__1 {
   background-image: url("../img/premier-1.png");
   background-position: center center;
@@ -223,27 +251,4 @@ img {
   background-repeat: no-repeat;
   object-fit: cover;
   grid-column: span 2;
-}
-
-.premier__wrapper .title__img {
-  letter-spacing: 2px;
-  text-align: center;
-  color: var(--dark-gray-color);
-  font-weight: 200;
-  font-size: 15px;
-}
-
-.button {
-  text-align: center;
-  display: inline-block;
-  font-weight: 500;
-  padding: 8px 10px;
-  border-radius: 12px;
-  letter-spacing: 2px;
-  background-color: var(--yellow-color);
-  color: var(--dark-color);
-}
-.premier__content .ticket {
-  margin-right: 10px;
-  margin-top: 20px;
 }
