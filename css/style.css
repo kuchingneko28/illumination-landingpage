@@ -128,12 +128,22 @@ img {
   color: var(--dark-gray-color);
 }
 .hero__minions {
+  position: relative;
   display: block;
-  min-height: 294px;
+  height: 294px;
+  margin-top: min(30vh, 100px);
+  z-index: -99;
+}
+.hero__minions::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
   background-image: url("../img/minions.png");
   background-repeat: no-repeat;
   background-position: center bottom;
-  margin-top: min(30vh, 100px);
+  bottom: -32%;
 }
 .hero__social {
   display: flex;
@@ -189,12 +199,10 @@ img {
 
 .premier__grid {
   display: grid;
-  grid-template-columns: repeat(3, 100px);
+  grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 100px;
   gap: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  justify-content: center;
+  margin: 10px;
 }
 
 .premier__button {
@@ -296,6 +304,10 @@ img {
   .hero__minions {
     background-position: left bottom;
   }
+  .hero__minions::before {
+    background-position: left bottom;
+    bottom: -65px;
+  }
   .hero__content {
     flex: 3;
     margin-right: 50px;
@@ -307,14 +319,15 @@ img {
   .hero__image::before {
     position: absolute;
     content: "";
-    height: 726px;
+    height: 100%;
     width: 100%;
     display: block;
-    right: -15%;
+    right: -90px;
     background-image: url("../img/hero-background.png");
     background-position: left top;
     background-size: cover;
     background-repeat: no-repeat;
+    bottom: 0%;
   }
   .premier__wrapper {
     display: flex;
