@@ -92,6 +92,21 @@ img {
 .navbar__links a {
   color: var(--white-color);
 }
+.navbar__links .navbar__highlight {
+  position: relative;
+  color: var(--white-color);
+  font-weight: 500;
+}
+.navbar__highlight::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  border-radius: 3px;
+  bottom: -5;
+  left: 25%;
+  background-color: var(--yellow-color);
+}
 
 .burger span {
   transition: all 0.3s ease-in-out;
@@ -267,20 +282,8 @@ img {
   .navbar__wrapper {
     align-items: center;
   }
-  .navbar__links .navbar__links__active {
-    position: relative;
+  .navbar__links .navbar__highlight {
     color: var(--dark-color);
-    font-weight: 500;
-  }
-  .navbar__links__active::after {
-    content: "";
-    position: absolute;
-    width: 50%;
-    height: 3px;
-    border-radius: 3px;
-    bottom: -5;
-    left: 25%;
-    background-color: var(--yellow-color);
   }
   .burger {
     display: none;
