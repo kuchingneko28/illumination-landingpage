@@ -37,7 +37,9 @@ a {
 img {
   max-width: 100%;
 }
-
+.hidden {
+  overflow: hidden;
+}
 /* Layout */
 .container {
   max-width: 1200px;
