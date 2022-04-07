@@ -241,6 +241,7 @@ img {
   letter-spacing: 2px;
   background-color: var(--yellow-color);
   color: var(--dark-color);
+  transition: 0.3s all ease;
 }
 /* Grid items */
 .premier__item {
@@ -353,9 +354,22 @@ img {
   .premier__button {
     text-align: left;
   }
+  .button {
+    transition: 0.3s all ease;
+  }
   /* Animated Desktop */
+  .button:hover {
+    opacity: 0.7;
+  }
   .social-box:hover {
     transform: scale(1.2);
     opacity: 0.6;
+  }
+  .premier__item {
+    filter: brightness(80%);
+    transition: 0.3s all ease-in;
+  }
+  .premier__item:hover {
+    filter: brightness(100%);
   }
 }
