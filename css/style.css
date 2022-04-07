@@ -344,6 +344,9 @@ img {
   .premier__content {
     flex: 2;
   }
+  .premier__content .title {
+    text-align: left;
+  }
   .premier__grid__wrapper {
     flex: 2;
   }
