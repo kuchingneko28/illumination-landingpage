@@ -330,10 +330,9 @@ img {
   .hero__image::before {
     position: absolute;
     content: "";
+    width: 850px;
     height: 100%;
-    width: 100%;
     display: block;
-    right: -90px;
     background-image: url("../img/hero-background.png");
     background-position: left top;
     background-size: cover;
