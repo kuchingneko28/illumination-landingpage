@@ -325,7 +325,7 @@ img {
   }
   .hero__image {
     position: relative;
-    flex: 4;
+    flex: 3;
   }
   .hero__image::before {
     position: absolute;
