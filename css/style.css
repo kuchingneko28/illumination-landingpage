@@ -226,17 +226,17 @@ img {
 }
 
 .premier__button {
+  display: flex;
+  margin-top: 10px;
   text-align: center;
-}
-.premier__content .ticket {
-  margin-right: 10px;
-  margin-top: 20px;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Button premier */
 .button {
   text-align: center;
-  display: inline-block;
   font-weight: 500;
   padding: 8px 10px;
   border-radius: 12px;
@@ -244,6 +244,7 @@ img {
   background-color: var(--yellow-color);
   color: var(--dark-color);
   transition: 0.3s all ease;
+  border: none;
 }
 /* Grid items */
 .premier__item {
@@ -354,6 +355,8 @@ img {
   }
   .premier__button {
     text-align: left;
+    justify-content: start;
+    align-items: flex-start;
   }
   .button {
     transition: 0.3s all ease;
