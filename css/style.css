@@ -50,6 +50,17 @@ img {
 }
 
 /* Navbar */
+.shadow {
+  box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.25);
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  background-color: white;
+  top: 0;
+  transition: all 0.2s ease-in;
+}
 .logo {
   max-width: 324px;
 }
@@ -127,8 +138,8 @@ img {
 }
 
 .hero__content {
-  padding-top: min(10vh, 200px);
-  padding-bottom: min(10vh, 200px);
+  padding-top: min(30vh, 150px);
+  padding-bottom: min(30vh, 100px);
 }
 .hero__content h1 {
   color: var(--dark-color);
@@ -307,14 +318,11 @@ img {
   .hero__wrapper {
     display: flex;
     text-align: left;
-    margin-top: min(30vh, 50px);
+    margin-top: min(30vh, 150px);
   }
   .hero__social {
     align-items: flex-start;
     justify-content: start;
-  }
-  .hero__minions {
-    background-position: left bottom;
   }
   .hero__minions::before {
     background-position: left bottom;
@@ -338,7 +346,7 @@ img {
     background-position: left top;
     background-size: cover;
     background-repeat: no-repeat;
-    bottom: 0%;
+    bottom: 0;
   }
   .premier__wrapper {
     display: flex;
@@ -359,7 +367,7 @@ img {
     align-items: flex-start;
   }
   .button {
-    transition: 0.3s all ease;
+    transition: 0.3s all ease-in;
   }
   /* Animated Desktop */
   .button:hover {
