@@ -115,7 +115,7 @@ img {
   display: flex;
   list-style: none;
   position: fixed;
-  padding: min(30vh, 100px) 50px;
+  padding: min(15vh, 100px) 50px;
   gap: 20px;
   background-color: var(--navbar-background-color);
   backdrop-filter: blur(10px);
@@ -186,6 +186,7 @@ img {
 .hero__content h1 {
   color: var(--dark-color);
   font-size: 36px;
+  text-transform: uppercase;
 }
 .hero__content span {
   font-size: 20px;
@@ -200,8 +201,7 @@ img {
 .hero__minions {
   position: relative;
   height: 294px;
-  margin-top: min(30vh, 105px);
-  margin-bottom: min(30vh, 100px);
+  margin: min(15vh, 105px) 0;
   z-index: -99;
 }
 .hero__minions::before {
@@ -243,7 +243,7 @@ img {
 
 /* Premier */
 .premier {
-  padding: min(30vh, 70px) 0px;
+  padding: min(15vh, 70px) 0px;
   color: var(--dark-color);
 }
 .premier__wrapper {
@@ -272,7 +272,7 @@ img {
 .premier__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(147px, 1fr);
+  grid-auto-rows: minmax(100px, 1fr);
   gap: 10px;
   margin: 10px;
 }
@@ -359,7 +359,7 @@ img {
   .hero__wrapper {
     display: flex;
     text-align: left;
-    margin-top: min(30vh, 150px);
+    margin-top: min(15vh, 100px);
   }
   .hero__social {
     align-items: flex-start;
@@ -398,6 +398,9 @@ img {
   .premier__content {
     flex: 2;
   }
+  .premier__grid {
+    grid-auto-rows: minmax(147px, 1fr);
+  }
   .premier__content .title {
     text-align: left;
   }
@@ -424,12 +427,25 @@ img {
     opacity: 0.6;
   }
   .premier__item {
-    transition: 0.3s all ease-in-out;
+    transition: 0.4s all ease-in-out;
     filter: brightness(80%);
     filter: contrast(80%);
   }
   .premier__item:hover {
     filter: brightness(100%);
     filter: contrast(100%);
+    transform: scale(2);
+  }
+  .premier__item:nth-child(1):hover {
+    transform: translateX(-10px) scale(1.02);
+  }
+  .premier__item:nth-child(2):hover {
+    transform: translateY(-10px) scale(1.02);
+  }
+  .premier__item:nth-child(3):hover {
+    transform: translateX(10px) scale(1.02);
+  }
+  .premier__item:nth-child(4):hover {
+    transform: translateX(-10px) scale(1.02);
   }
 }
