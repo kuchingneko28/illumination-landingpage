@@ -46,3 +46,11 @@ window.addEventListener("load", () => {
   loader.classList.add("disppear");
   body.classList.remove("hidden");
 });
+
+// Jquery
+$(".owl-carousel").owlCarousel({
+  margin: 15,
+  loop: true,
+  autoWidth: true,
+  items: 3,
+});

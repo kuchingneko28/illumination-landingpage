@@ -334,7 +334,38 @@ img {
   object-fit: cover;
   grid-column: span 2;
 }
+/* Films */
+.film {
+  height: 100vh;
+}
 
+.film h3 {
+  margin-bottom: 10px;
+}
+
+.film__item img {
+  max-width: 224.75px;
+  max-height: 332.98px;
+  border-radius: 12px;
+}
+.film__item p {
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.film__highlight {
+  position: relative;
+}
+.film__highlight::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  border-radius: 3px;
+  bottom: -5;
+  left: 0;
+  background-color: var(--yellow-color);
+  transition: all 0.3s ease-in-out;
+}
 @media (min-width: 874px) {
   .navbar__wrapper {
     align-items: center;
