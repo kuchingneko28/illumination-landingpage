@@ -21,15 +21,15 @@ window.onscroll = function () {
     const sectionHeight = section.clientHeight;
     if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
       current = section.getAttribute("id");
-      console.log(current);
+      // console.log(current);
     }
 
     navLink.forEach((li) => {
-      console.log(li);
       li.classList.remove("navbar__highlight");
       if (li.classList.contains(current)) {
         li.classList.add("navbar__highlight");
       }
+      // console.log(li);
     });
   });
 
@@ -44,5 +44,5 @@ window.onscroll = function () {
 // Loader animation
 window.addEventListener("load", () => {
   loader.classList.add("disppear");
-  body.classList.remove("overflow");
+  body.classList.remove("hidden");
 });
