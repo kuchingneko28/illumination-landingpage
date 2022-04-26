@@ -39,6 +39,46 @@ a {
 img {
   max-width: 100%;
 }
+/* Loader */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--yellow-color);
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-direction: column;
+  text-align: center;
+}
+.loader__desc {
+  margin-top: 25px;
+  color: var(--dark-gray-color);
+}
+.loader img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.disppear {
+  animation: vanish 1s forwards;
+}
+.overflow {
+  overflow-y: hidden;
+}
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  0% {
+  }
+}
 /* Layout */
 .container {
   max-width: 1200px;
@@ -55,19 +95,21 @@ img {
 .navbar {
   position: fixed;
   width: 100%;
-  z-index: 99;
   background-color: var(--white-color);
   top: 0;
+  left: 0;
+  right: 0;
   transition: all 0.2s ease-in-out;
+  z-index: 99;
 }
 .logo {
   max-width: 324px;
 }
 .navbar__wrapper {
+  position: relative;
   padding: 25px 0;
   display: flex;
   justify-content: space-between;
-  position: relative;
 }
 .navbar__links {
   display: flex;
@@ -81,11 +123,12 @@ img {
   flex-direction: column;
   transform: translateX(100%);
   transition: all 0.3s ease-in-out;
+  bottom: 0;
 }
 
 /* Burger */
 .burger {
-  z-index: 9999;
+  z-index: 999;
   cursor: pointer;
 }
 

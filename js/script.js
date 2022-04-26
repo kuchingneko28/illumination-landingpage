@@ -4,6 +4,7 @@ const burger = document.querySelector(".burger");
 const body = document.querySelector("body");
 const sections = document.querySelectorAll("section");
 const navLink = document.querySelectorAll(".navbar__links a");
+let loader = document.querySelector(".loader");
 
 // Burger link
 burger.addEventListener("click", () => {
@@ -39,3 +40,9 @@ window.onscroll = function () {
     navbar.classList.remove("shadow");
   }
 };
+
+// Loader animation
+window.addEventListener("load", () => {
+  loader.classList.add("disppear");
+  body.classList.remove("overflow");
+});
