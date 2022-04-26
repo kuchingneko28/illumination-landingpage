@@ -6,6 +6,7 @@
   --dark-color: #222831;
   --dark-gray-color: #393e46;
   --white-color: #fff;
+  --transparant-white: rgba(255, 255, 255, 0.5);
   --navbar-background-color: rgba(34, 40, 49, 0.6);
   --font-poppins: "Poppins", sans-serif;
 }
@@ -117,8 +118,8 @@ img {
   position: fixed;
   padding: min(15vh, 100px) 50px;
   gap: 20px;
-  background-color: var(--navbar-background-color);
-  backdrop-filter: blur(10px);
+  background-color: var(--transparant-white);
+  backdrop-filter: blur(12px);
   inset: 77px 0 0 35%;
   flex-direction: column;
   transform: translateX(100%);
@@ -145,7 +146,7 @@ img {
   transform: rotate(45deg) translate(-6px, -6px);
 }
 .navbar__links a {
-  color: var(--white-color);
+  color: var(--dark-gray-color-color);
 }
 .navbar__highlight {
   position: relative;
@@ -427,7 +428,7 @@ img {
     opacity: 0.6;
   }
   .premier__item {
-    transition: 0.4s all ease-in-out;
+    transition: 0.35s all ease-in-out;
     filter: brightness(80%);
     filter: contrast(80%);
   }
