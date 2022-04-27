@@ -25,14 +25,16 @@ body {
 }
 
 h1,
-h2,
+h2 {
+  font-weight: 600;
+}
+
 h3,
 h4,
 h5,
 h6 {
   font-weight: 500;
 }
-
 a {
   text-decoration: none;
 }
@@ -80,6 +82,7 @@ img {
   0% {
   }
 }
+
 /* Layout */
 .container {
   max-width: 1200px;
@@ -120,7 +123,7 @@ img {
   gap: 20px;
   background-color: var(--transparant-white);
   backdrop-filter: blur(12px);
-  inset: 77px 0 0 35%;
+  inset: 75px 0 0 35%;
   flex-direction: column;
   transform: translateX(100%);
   transition: all 0.3s ease-in-out;
@@ -153,7 +156,7 @@ img {
   color: var(--white-color);
   font-weight: 500;
 }
-.navbar__highlight::after {
+.navbar__highlight::before {
   content: "";
   position: absolute;
   width: 50%;
@@ -162,7 +165,6 @@ img {
   bottom: -5;
   left: 25%;
   background-color: var(--yellow-color);
-  transition: all 0.3s ease-in-out;
 }
 
 .burger span {
@@ -232,14 +234,27 @@ img {
   background-color: var(--yellow-color);
   border-radius: 12px;
 }
-/* Border left */
-.border::before {
+/* Border */
+.left__border::before {
   content: "";
   width: 3px;
   height: 14px;
   display: inline-block;
   background-color: var(--yellow-color);
   border-radius: 3px;
+}
+.bottom__border {
+  position: relative;
+}
+.bottom__border::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  border-radius: 5px;
+  bottom: -5;
+  left: 0;
+  background-color: var(--yellow-color);
 }
 
 /* Premier */
@@ -275,7 +290,7 @@ img {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(100px, 1fr);
   gap: 10px;
-  margin: 10px;
+  margin: 15px;
 }
 
 .premier__button {
@@ -305,21 +320,21 @@ img {
 }
 .items__1 {
   background-image: url("../img/premier-1.jpg");
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
 }
 .items__2 {
   background-image: url("../img/premier-2.jpg");
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
 }
 .items__3 {
   background-image: url("../img/premier-3.jpg");
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
@@ -328,7 +343,7 @@ img {
 
 .items__4 {
   background-image: url("../img/premier-4.jpg");
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
@@ -336,10 +351,10 @@ img {
 }
 /* Films */
 .film {
-  height: 100vh;
+  /* I don't know what should i add on this line ughhh */
 }
 
-.film h3 {
+.film .title {
   margin-bottom: 10px;
 }
 
@@ -348,24 +363,21 @@ img {
   max-height: 332.98px;
   border-radius: 12px;
 }
-.film__item p {
-  padding: 10px 0;
-  margin-bottom: 10px;
+.film__item h4 {
+  padding: 5px 0;
+  margin: 5px 0;
 }
-.film__highlight {
-  position: relative;
+
+/* Footer */
+footer {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.film__highlight::after {
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 3px;
-  border-radius: 3px;
-  bottom: -5;
-  left: 0;
-  background-color: var(--yellow-color);
-  transition: all 0.3s ease-in-out;
-}
+
+/* Media query for desktop view  */
 @media (min-width: 874px) {
   .navbar__wrapper {
     align-items: center;
@@ -447,7 +459,7 @@ img {
   .button {
     transition: 0.3s all ease-in-out;
   }
-  /* Animated Desktop */
+  /* Animated for desktop view only */
   .button:hover {
     opacity: 0.7;
   }

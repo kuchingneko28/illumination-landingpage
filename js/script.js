@@ -6,13 +6,18 @@ const sections = document.querySelectorAll("section");
 const navLink = document.querySelectorAll(".navbar__links a");
 let loader = document.querySelector(".loader");
 
+const backtoTop = () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+};
+
 // Burger link
 burger.addEventListener("click", () => {
   navLinks.classList.toggle("navbar__links__active");
   burger.classList.toggle("navbar__links__active");
 });
 
-window.onscroll = function () {
+window.onscroll = () => {
   // Highlight link
   let current = "";
 
@@ -49,8 +54,8 @@ window.addEventListener("load", () => {
 
 // Jquery
 $(".owl-carousel").owlCarousel({
-  margin: 15,
+  margin: 12,
   loop: true,
   autoWidth: true,
-  items: 3,
+  items: 4,
 });
