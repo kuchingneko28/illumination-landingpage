@@ -123,7 +123,7 @@ img {
   gap: 20px;
   background-color: var(--transparant-white);
   backdrop-filter: blur(12px);
-  inset: 75px 0 0 35%;
+  inset: 77px 0 0 35%;
   flex-direction: column;
   transform: translateX(100%);
   transition: all 0.3s ease-in-out;
