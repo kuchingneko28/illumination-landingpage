@@ -54,12 +54,23 @@ window.addEventListener("load", () => {
 
 // Jquery
 $(".owl-carousel").owlCarousel({
-  margin: 28,
-  loop: false,
+  margin: 12,
   loop: true,
-  autoWidth: true,
-  center: true,
+  responsiveClass: true,
+  responsive: {
+    300: {
+      items: 2,
+      nav: false,
+      autoWidth: true,
+    },
+    900: {
+      items: 5,
+      nav: false,
+      loop: true,
+      autoWidth: true,
+    },
+  },
   autoplay: true,
-  autoplayTimeout: 8000,
+  autoplayTimeout: 5000,
   autoplayHoverPause: true,
 });

@@ -215,7 +215,7 @@ img {
   background-image: url("../img/minions.png");
   background-repeat: no-repeat;
   background-position: center bottom;
-  bottom: -32%;
+  bottom: -33%;
   object-fit: cover;
   left: 0;
 }
@@ -311,7 +311,6 @@ img {
   letter-spacing: 2px;
   background-color: var(--yellow-color);
   color: var(--dark-color);
-  transition: 0.3s all ease;
   border: none;
 }
 /* Grid items */
@@ -403,15 +402,11 @@ footer {
   .hero__wrapper {
     display: flex;
     text-align: left;
-    margin-top: min(15vh, 100px);
+    margin-top: max(22vh, 100px);
   }
   .hero__social {
     align-items: flex-start;
     justify-content: start;
-  }
-
-  .hero__minions {
-    display: block;
   }
   .hero__minions::before {
     background-position: left bottom;
@@ -448,6 +443,7 @@ footer {
   }
   .premier__grid__wrapper {
     flex: 2;
+    margin-left: -12px;
   }
   .premier__button {
     text-align: left;
@@ -455,11 +451,12 @@ footer {
     align-items: flex-start;
   }
   .button {
-    transition: 0.3s all ease-in-out;
+    transition: 0.35s all ease-in-out;
   }
   /* Animation for desktop view only */
   .button:hover {
-    opacity: 0.7;
+    background-color: var(--dark-gray-color);
+    color: var(--yellow-color);
   }
   .social-box {
     transition: 0.3s all ease-in-out;
@@ -469,25 +466,12 @@ footer {
     opacity: 0.6;
   }
   .premier__item {
-    transition: 0.35s all ease-in-out;
+    transition: 0.25s all ease-in-out;
     filter: brightness(80%);
     filter: contrast(80%);
   }
   .premier__item:hover {
     filter: brightness(100%);
     filter: contrast(100%);
-    transform: scale(2);
-  }
-  .premier__item:nth-child(1):hover {
-    transform: translateX(-10px) scale(1.02);
-  }
-  .premier__item:nth-child(2):hover {
-    transform: translateY(-10px) scale(1.02);
-  }
-  .premier__item:nth-child(3):hover {
-    transform: translateX(10px) scale(1.02);
-  }
-  .premier__item:nth-child(4):hover {
-    transform: translateX(-10px) scale(1.02);
   }
 }
