@@ -79,3 +79,13 @@ $(".owl-carousel").owlCarousel({
   autoplayTimeout: 5000,
   autoplayHoverPause: true,
 });
+function zoomin() {
+  var GFG = document.getElementById("geeks");
+  var currHeight = GFG.clientHeight;
+  GFG.style.height = currHeight + 40 + "px";
+}
+function zoomout() {
+  var GFG = document.getElementById("geeks");
+  var currHeight = GFG.clientHeight;
+  GFG.style.height = currHeight - 40 + "px";
+}
