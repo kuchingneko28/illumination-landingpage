@@ -56,23 +56,26 @@ img {
   justify-content: center;
   gap: 50px;
   flex-direction: column;
-  text-align: center;
 }
 .loader__desc {
   margin-top: 25px;
   color: var(--dark-gray-color);
 }
-.loader img {
+.loader__desc h1 {
+}
+.loader__desc p {
+}
+
+.loader__desc img:nth-child(3) {
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: 0;
-  z-index: -1;
 }
 .disppear {
   animation: vanish 1s forwards;
 }
 .hidden {
-  overflow-y: hidden;
+  overflow: hidden;
 }
 @keyframes vanish {
   100% {
@@ -91,6 +94,36 @@ img {
   padding-right: 15px;
   padding-left: 15px;
 }
+/* Global CSS */
+
+/* Title Section */
+.title {
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* Border Section*/
+.left__border::before {
+  content: "";
+  width: 3px;
+  height: 14px;
+  display: inline-block;
+  background-color: var(--yellow-color);
+  border-radius: 3px;
+}
+.bottom__border {
+  position: relative;
+}
+.bottom__border::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  border-radius: 5px;
+  bottom: -5;
+  left: 0;
+  background-color: var(--yellow-color);
+}
 
 /* Navbar */
 .shadow {
@@ -104,7 +137,7 @@ img {
   left: 0;
   right: 0;
   transition: all 0.2s ease-in-out;
-  z-index: 99;
+  z-index: 9;
 }
 .logo {
   max-width: 324px;
@@ -132,7 +165,6 @@ img {
 
 /* Burger */
 .burger {
-  z-index: 999;
   cursor: pointer;
 }
 
@@ -205,7 +237,6 @@ img {
   position: relative;
   height: 294px;
   margin: min(15vh, 105px) 0;
-  z-index: -99;
 }
 .hero__minions::before {
   content: "";
@@ -234,29 +265,6 @@ img {
   background-color: var(--yellow-color);
   border-radius: 12px;
 }
-/* Border */
-.left__border::before {
-  content: "";
-  width: 3px;
-  height: 14px;
-  display: inline-block;
-  background-color: var(--yellow-color);
-  border-radius: 3px;
-}
-.bottom__border {
-  position: relative;
-}
-.bottom__border::before {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 3px;
-  border-radius: 5px;
-  bottom: -5;
-  left: 0;
-  background-color: var(--yellow-color);
-}
-
 /* Premier */
 .premier {
   padding: min(15vh, 70px) 0px;
@@ -273,7 +281,8 @@ img {
   text-align: center;
   color: var(--dark-gray-color);
   font-weight: 200;
-  font-size: 14px;
+  font-size: 12px;
+  margin-top: 10px;
 }
 .premier__content .title {
   letter-spacing: 3px;
@@ -281,7 +290,7 @@ img {
   text-align: center;
 }
 .premier__content .desc {
-  line-height: 28px;
+  line-height: 30px;
   color: var(--dark-gray-colorcolor);
 }
 
@@ -290,12 +299,12 @@ img {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(100px, 1fr);
   gap: 10px;
-  margin: 15px;
+  justify-content: center;
 }
 
 .premier__button {
   display: flex;
-  margin-top: 10px;
+  margin: 15px 0;
   text-align: center;
   gap: 15px;
   justify-content: center;
@@ -353,10 +362,6 @@ img {
   /* I don't know what should i add on this line ughhh */
 }
 
-.film .title {
-  margin-bottom: 10px;
-}
-
 .film__item img {
   max-width: 224.75px;
   max-height: 332.98px;
@@ -377,7 +382,7 @@ footer {
 }
 
 /* Media query for desktop view  */
-@media (min-width: 874px) {
+@media (min-width: 974px) {
   .navbar__wrapper {
     align-items: center;
   }
@@ -403,6 +408,9 @@ footer {
     display: flex;
     text-align: left;
     margin-top: max(22vh, 100px);
+  }
+  .hero__content .desc {
+    line-height: 28px;
   }
   .hero__social {
     align-items: flex-start;
@@ -432,28 +440,36 @@ footer {
     display: flex;
     flex-direction: row-reverse;
   }
+  .premier__wrapper .title__img {
+    font-size: 16px;
+  }
   .premier__content {
     flex: 2;
+    display: flex;
+    flex-direction: column;
   }
+
   .premier__grid {
     grid-auto-rows: minmax(147px, 1fr);
+    justify-content: flex-start;
   }
   .premier__content .title {
     text-align: left;
+    margin-top: 0;
   }
   .premier__grid__wrapper {
     flex: 2;
-    margin-left: -12px;
   }
   .premier__button {
     text-align: left;
     justify-content: start;
-    align-items: flex-start;
+    flex: 1;
   }
   .button {
     transition: 0.35s all ease-in-out;
   }
   /* Animation for desktop view only */
+
   .button:hover {
     background-color: var(--dark-gray-color);
     color: var(--yellow-color);

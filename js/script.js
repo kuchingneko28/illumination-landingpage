@@ -15,6 +15,11 @@ const backtoTop = () => {
 burger.addEventListener("click", () => {
   navLinks.classList.toggle("navbar__links__active");
   burger.classList.toggle("navbar__links__active");
+  if (body.classList.contains("hidden")) {
+    body.classList.remove("hidden");
+  } else {
+    body.classList.add("hidden");
+  }
 });
 
 window.onscroll = () => {
