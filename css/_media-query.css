@@ -41,7 +41,6 @@
   }
   .hero__image {
     position: relative;
-    width: 850px;
     flex: 3;
   }
   .hero__image::before {
