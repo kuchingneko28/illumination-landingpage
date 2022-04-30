@@ -1,0 +1,111 @@
+/* Media query for desktop view  */
+@media (min-width: 974px) {
+  .navbar__wrapper {
+    align-items: center;
+  }
+  .navbar__highlight {
+    color: var(--dark-color);
+  }
+  .burger {
+    display: none;
+  }
+  .navbar__links {
+    position: relative;
+    flex-direction: row;
+    padding: 0;
+    color: var(--dark-color);
+    transform: translateX(0%);
+    inset: 0;
+    background: var(--white-color);
+  }
+  .navbar__links a {
+    color: var(--dark-gray-color-color);
+  }
+  .hero__wrapper {
+    display: flex;
+    text-align: left;
+    margin-top: max(22vh, 100px);
+  }
+  .hero__content .desc {
+    line-height: 28px;
+  }
+  .hero__social {
+    align-items: flex-start;
+    justify-content: start;
+  }
+  .hero__minions::before {
+    background-position: left bottom;
+  }
+  .hero__content {
+    flex: 3;
+  }
+  .hero__image {
+    position: relative;
+    flex: 3;
+  }
+  .hero__image::before {
+    position: absolute;
+    content: "";
+    width: 850px;
+    height: 100%;
+    background-image: url("../img/hero-background.png");
+    background-position: left top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .premier__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .premier__wrapper .title__img {
+    font-size: 16px;
+  }
+  .premier__content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .premier__grid {
+    grid-auto-rows: minmax(12vw, 1fr);
+    justify-content: flex-start;
+  }
+  .premier__content .title {
+    text-align: left;
+    margin-top: 0;
+  }
+  .premier__grid__wrapper {
+    flex: 2;
+  }
+  .premier__button {
+    text-align: left;
+    justify-content: start;
+    flex: 1;
+  }
+  .button {
+    transition: 0.35s all ease-in-out;
+  }
+  /* Animation for desktop view only */
+
+  .button:hover {
+    background-color: var(--dark-gray-color);
+    color: var(--yellow-color);
+  }
+  .social-box {
+    transition: 0.3s all ease-in-out;
+  }
+  .social-box:hover {
+    transform: scale(1.15);
+    opacity: 0.6;
+  }
+  .premier__item {
+    transition: 0.3s all ease-in-out;
+    filter: brightness(80%);
+    filter: contrast(80%);
+    cursor: pointer;
+  }
+  .premier__item:hover {
+    filter: brightness(100%);
+    filter: contrast(100%);
+  }
+}

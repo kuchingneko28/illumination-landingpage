@@ -1,0 +1,56 @@
+/* Hero */
+
+.hero__wrapper {
+  text-align: center;
+}
+
+.hero__content {
+  margin-top: min(20vh, 150px);
+}
+.hero__content h1 {
+  color: var(--dark-color);
+  font-size: 36px;
+  text-transform: uppercase;
+}
+.hero__content span {
+  font-size: 20px;
+  margin-top: -10px;
+  color: var(--dark-color);
+  display: block;
+}
+.hero__content .desc {
+  padding: 10px 0;
+  color: var(--dark-gray-color);
+}
+.hero__minions {
+  position: relative;
+  height: 294px;
+  margin: min(15vh, 105px) 0;
+}
+.hero__minions::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/minions.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  bottom: -33%;
+  object-fit: cover;
+  left: 0;
+}
+.hero__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.social-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: var(--yellow-color);
+  border-radius: 12px;
+}

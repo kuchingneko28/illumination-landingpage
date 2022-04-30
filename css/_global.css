@@ -1,0 +1,82 @@
+/* Basic Css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --yellow-color: #ffd369;
+  --dark-color: #222831;
+  --dark-gray-color: #393e46;
+  --white-color: #fff;
+  --transparant-white: rgba(255, 255, 255, 0.5);
+  --navbar-background-color: rgba(34, 40, 49, 0.6);
+  --font-poppins: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-poppins);
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/* Global CSS */
+
+/* Title Section */
+.title {
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* Border Section*/
+.left__border::before {
+  content: "";
+  width: 3px;
+  height: 14px;
+  display: inline-block;
+  background-color: var(--yellow-color);
+  border-radius: 3px;
+}
+.bottom__border {
+  position: relative;
+}
+.bottom__border::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  border-radius: 5px;
+  bottom: -5;
+  left: 0;
+  background-color: var(--yellow-color);
+}

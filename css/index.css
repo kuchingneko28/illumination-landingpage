@@ -1,0 +1,10 @@
+@import "./_global.css";
+@import "./_loader.css";
+@import "./_navbar.css";
+@import "./_hero.css";
+@import "./_premier.css";
+@import "./_film.css";
+@import "./_footer.css";
+
+/* Desktop view */
+@import "./_media-query.css";
