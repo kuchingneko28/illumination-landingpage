@@ -55,7 +55,8 @@ img {
 /* Title Section */
 .title {
   margin-bottom: 10px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  font-size: 20px;
 }
 
 /* Border Section*/

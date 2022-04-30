@@ -18,10 +18,8 @@
   margin-top: 10px;
 }
 .premier__content .title {
-  letter-spacing: 3px;
   margin: 20px 0;
   text-align: center;
-  font-size: 18px;
 }
 .premier__content .desc {
   line-height: 30px;
@@ -31,7 +29,7 @@
 .premier__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(28vw, 1fr);
+  grid-auto-rows: minmax(27vw, 1fr);
   gap: 10px;
   justify-content: center;
 }
