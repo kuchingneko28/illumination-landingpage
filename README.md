@@ -8,4 +8,4 @@ Trying to slicing my design from figma into real web.
 
 ## Deployment
 
-This project deploy by vercel
+This project deploy by vercel : [Click here](https://illumination-landingpage.vercel.app/)
