@@ -63,6 +63,10 @@ $(".owl-carousel").owlCarousel({
   loop: true,
   responsiveClass: true,
   responsive: {
+    0: {
+      items: 1,
+      nav: false,
+    },
     300: {
       items: 2,
       nav: false,

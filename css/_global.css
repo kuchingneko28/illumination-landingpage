@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --yellow-color: #ffd369;
-  --dark-color: #222831;
-  --dark-gray-color: #393e46;
-  --white-color: #fff;
+  --yellow-color: hsl(42, 100%, 71%);
+  --dark-color: hsl(216, 18%, 16%);
+  --dark-gray-color: hsl(217, 10%, 25%);
+  --white-color: hsl(0, 0%, 100%);
   --transparant-white: rgba(255, 255, 255, 0.5);
   --navbar-background-color: rgba(34, 40, 49, 0.6);
   --font-poppins: "Poppins", sans-serif;

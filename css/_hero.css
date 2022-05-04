@@ -45,7 +45,7 @@
   justify-content: center;
   gap: 15px;
 }
-.social-box {
+.social__box {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -10,7 +10,7 @@
   left: 0;
   right: 0;
   transition: all 0.2s ease-in-out;
-  z-index: 9;
+  z-index: 10;
 }
 .logo {
   max-width: 324px;

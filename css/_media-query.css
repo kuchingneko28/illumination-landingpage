@@ -46,13 +46,14 @@
   .hero__image::before {
     position: absolute;
     content: "";
-    width: max(45vw, 100%);
+    width: 48vw;
     height: 100%;
     background-image: url("../img/hero-background.png");
     background-position: left top;
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
+    bottom: 0;
   }
   .premier__wrapper {
     display: flex;
@@ -60,6 +61,7 @@
   }
   .premier__wrapper .title__img {
     font-size: 16px;
+    margin-left: -45px;
   }
   .premier__content {
     flex: 2;
@@ -68,7 +70,8 @@
   }
 
   .premier__grid {
-    grid-auto-rows: minmax(12vw, 1fr);
+    grid-template-columns: repeat(3, 171px);
+    grid-auto-rows: 156px;
     justify-content: flex-start;
   }
   .premier__content .title {
@@ -84,7 +87,7 @@
     justify-content: start;
   }
   .button {
-    transition: 0.35s all ease-in-out;
+    transition: 0.38s all ease-in-out;
   }
   /* Animation for desktop view only */
 
@@ -92,12 +95,11 @@
     background-color: var(--dark-gray-color);
     color: var(--yellow-color);
   }
-  .social-box {
+  .social__box {
     transition: 0.3s all ease-in-out;
   }
-  .social-box:hover {
+  .social__box:hover {
     transform: scale(1.15);
-    opacity: 0.6;
   }
   .premier__item {
     transition: 0.3s all ease-in-out;
