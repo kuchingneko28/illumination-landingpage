@@ -92,17 +92,16 @@
   .footer__wrapper {
     flex-direction: row;
     justify-content: space-around;
-    text-align: left;
   }
   .footer__about {
-    flex: 0.35;
+    flex: 0.4;
   }
-  .footer__hightlight::before {
-    left: 0;
-  }
+
   .footer__copyright {
     flex-direction: row;
     justify-content: space-between;
+    padding-right: 65px;
+    padding-left: 65px;
   }
   .footer__snowball {
     position: absolute;

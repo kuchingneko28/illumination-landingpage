@@ -1,8 +1,9 @@
 /* Footer */
 footer {
+  position: relative;
+  overflow: hidden;
   margin-top: min(15vh, 70px);
   color: var(--white-color);
-  position: relative;
 }
 .footer__primary {
   background-color: var(--dark-color);
@@ -16,8 +17,8 @@ footer {
 .footer__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  justify-content: start;
+  align-items: flex-start;
   margin: 10px 25px 100px 25px;
 }
 .footer__wrapper h4 {
@@ -60,7 +61,7 @@ footer {
   height: 3px;
   border-radius: 3px;
   bottom: -5;
-  left: 25%;
+  left: 0;
   background-color: var(--yellow-color);
 }
 .footer__copyright {
@@ -68,7 +69,8 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 15px 65px 15px 65px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .footer__copyright p {
   margin-top: 15px;
