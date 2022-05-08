@@ -137,15 +137,13 @@
   }
   .social__box:hover {
     transform: scale(1.15);
+    opacity: 0.75;
   }
   .premier__item {
     transition: 0.3s all ease-in-out;
-    filter: brightness(80%);
-    filter: contrast(80%);
-    cursor: pointer;
   }
   .premier__item:hover {
-    filter: brightness(100%);
-    filter: contrast(100%);
+    filter: brightness(80%);
+    filter: contrast(80%);
   }
 }
