@@ -102,25 +102,26 @@
   }
   .footer__copyright {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .footer__snowball {
     position: absolute;
-    width: 232px;
+    width: 193px;
     height: 100%;
     top: 0;
-    left: 0;
+    left: -10;
     background-image: url("../img/snowball.png");
     background-repeat: no-repeat;
     background-position: center bottom;
     object-fit: cover;
+    display: block;
   }
   .footer__max {
     position: absolute;
     width: 193px;
     height: 100%;
     top: 0;
-    right: 0;
+    right: -25;
     background-image: url("../img/max.png");
     background-repeat: no-repeat;
     background-position: center bottom;

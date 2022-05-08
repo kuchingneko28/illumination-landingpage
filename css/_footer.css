@@ -34,6 +34,9 @@ footer {
 .footer__wrapper li {
   font-size: 14px;
 }
+.footer__wrapper li {
+  margin-bottom: 10px;
+}
 .footer__wrapper ul li::before {
   content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: var(--yellow-color); /* Change the color */
@@ -65,8 +68,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding: 15px 65px 15px 65px;
 }
 .footer__copyright p {
   margin-top: 15px;
