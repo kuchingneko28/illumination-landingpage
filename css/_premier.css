@@ -1,6 +1,5 @@
 /* Premier */
 .premier {
-  padding: min(15vh, 70px) 0px;
   color: var(--dark-color);
 }
 .premier__wrapper {

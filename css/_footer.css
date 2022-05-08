@@ -1,8 +1,69 @@
 /* Footer */
 footer {
-  text-align: center;
-  height: 100vh;
+  margin-top: min(15vh, 70px);
+  color: var(--white-color);
+}
+.footer__primary {
+  background-color: var(--dark-color);
+  padding: 10px 0;
+  margin-top: min(15vh, 70px);
+}
+.footer__secondary {
+  background-color: var(--dark-gray-color);
+}
+
+.footer__wrapper {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px 25px 100px 25px;
+}
+.footer__wrapper h4 {
+  margin: 23px 0;
+}
+.footer__wrapper span {
+  padding: 5px 0;
+}
+.footer__wrapper h4,
+.footer__wrapper p,
+.footer__wrapper li {
+  font-size: 15px;
+}
+.footer__wrapper ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--yellow-color); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 16px; /* Also needed for space (tweak if needed) */
+  margin-left: -16px; /* Also needed for space (tweak if needed) */
+}
+
+.footer__about {
+}
+.footer__hightlight {
+  position: relative;
+  color: var(--white-color);
+  font-weight: 500;
+}
+.footer__hightlight::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  border-radius: 3px;
+  bottom: -5;
+  left: 25%;
+  background-color: var(--yellow-color);
+}
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 18px 20px;
+}
+.footer__copyright p {
+  font-size: 14px;
 }

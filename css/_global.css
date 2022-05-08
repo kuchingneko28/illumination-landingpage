@@ -42,6 +42,12 @@ a {
 img {
   max-width: 100%;
 }
+ul {
+  list-style: none;
+}
+section {
+  margin-top: min(15vh, 70px);
+}
 /* Layout */
 .container {
   max-width: 1200px;

@@ -59,7 +59,7 @@ window.addEventListener("load", () => {
 
 // Jquery
 $(".owl-carousel").owlCarousel({
-  margin: 12,
+  margin: 25,
   loop: true,
   responsiveClass: true,
   responsive: {
