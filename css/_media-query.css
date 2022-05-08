@@ -91,7 +91,7 @@
   }
   .footer__wrapper {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: left;
   }
   .footer__about {
@@ -102,9 +102,30 @@
   }
   .footer__copyright {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
-
+  .footer__snowball {
+    position: absolute;
+    width: 232px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../img/snowball.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    object-fit: cover;
+  }
+  .footer__max {
+    position: absolute;
+    width: 193px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-image: url("../img/max.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    object-fit: cover;
+  }
   /* Animation for desktop view only */
 
   .button:hover {

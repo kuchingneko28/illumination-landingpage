@@ -22,12 +22,6 @@
 .loader__desc p {
 }
 
-.loader__desc img:nth-child(3) {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  object-fit: cover;
-}
 .disppear {
   animation: vanish 1s forwards;
 }
