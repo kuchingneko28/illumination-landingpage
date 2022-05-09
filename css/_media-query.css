@@ -107,9 +107,9 @@
   .footer__snowball {
     position: absolute;
     width: 193px;
-    height: 100%;
-    top: 0;
-    left: -10;
+    height: 172.2px;
+    bottom: 0;
+    left: 0;
     background-image: url("../img/snowball.png");
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -117,7 +117,7 @@
     display: block;
   }
   .footer__max {
-    top: 0;
+    bottom: 0;
   }
   /* Animation for desktop view only */
 
