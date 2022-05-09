@@ -35,6 +35,7 @@
   }
   .hero__minions::before {
     background-position: left bottom;
+    bottom: -33%;
   }
   .hero__content {
     flex: 3;
@@ -116,15 +117,7 @@
     display: block;
   }
   .footer__max {
-    position: absolute;
-    width: 193px;
-    height: 100%;
     top: 0;
-    right: -25;
-    background-image: url("../img/max.png");
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    object-fit: cover;
   }
   /* Animation for desktop view only */
 

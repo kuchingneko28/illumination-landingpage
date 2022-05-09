@@ -75,3 +75,14 @@ footer {
 .footer__copyright p {
   margin-top: 15px;
 }
+.footer__max {
+  position: absolute;
+  width: 193px;
+  height: 100%;
+  top: -103px;
+  right: 0;
+  background-image: url("../img/max.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  object-fit: cover;
+}
