@@ -7,5 +7,12 @@
 @import "./_film.css";
 @import "./_footer.css";
 
+/* Owl Carousel*/
+@import "./owl.carousel.min.css";
+@import "./owl.theme.default.min.css";
+
+/* Lightbox */
+@import "./lightbox.min.css";
+
 /* Desktop view */
 @import "./_media-query.css";

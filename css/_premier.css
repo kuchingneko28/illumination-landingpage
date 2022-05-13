@@ -56,6 +56,8 @@
 /* Grid items */
 .premier__item {
   border-radius: 12px;
+  width: 100%;
+  height: 100%;
 }
 .items__1 {
   background-image: url("../img/premier-1.jpg");
@@ -77,6 +79,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
+}
+.items__3__grow {
   grid-row: span 2;
 }
 
@@ -86,5 +90,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
+}
+.items__4__grow {
   grid-column: span 2;
 }
