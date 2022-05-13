@@ -58,13 +58,12 @@ window.addEventListener("load", () => {
 });
 // Lightbox
 lightbox.option({
-  maxWidth: 800,
+  maxHeight: 400,
 });
 
 // Jquery
 $(".owl-carousel").owlCarousel({
-  margin: 25,
-  loop: true,
+  margin: 23,
   responsiveClass: true,
   responsive: {
     0: {
@@ -79,11 +78,7 @@ $(".owl-carousel").owlCarousel({
     900: {
       items: 5,
       nav: false,
-      loop: true,
       autoWidth: true,
     },
   },
-  autoplay: true,
-  autoplayTimeout: 5000,
-  autoplayHoverPause: true,
 });
