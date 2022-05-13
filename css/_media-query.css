@@ -1,5 +1,18 @@
 /* Media query for desktop view  */
 @media (min-width: 974px) {
+  .loader__wrapper {
+    flex-direction: row;
+  }
+  .loader__desc {
+    text-align: left;
+  }
+  .loading {
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+  .loader__img {
+    width: 300px;
+  }
   .navbar__wrapper {
     align-items: center;
   }

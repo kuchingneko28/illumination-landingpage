@@ -13,21 +13,61 @@
   gap: 50px;
   flex-direction: column;
 }
+.loader__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .loader__desc {
   margin-top: 25px;
   color: var(--dark-gray-color);
+  text-align: center;
 }
-.loader__desc h1 {
+.loader__img {
+  width: 250px;
 }
-.loader__desc p {
-}
-
 .disppear {
   animation: vanish 1s forwards;
 }
 .hidden {
   overflow: hidden;
 }
+.loading {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+.loading div {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--dark-gray-color);
+  animation: scaling 2.5s ease-in-out infinite;
+}
+@keyframes scaling {
+  0%,
+  100% {
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+.loading div:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.loading div:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.loading div:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.loading div:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
 @keyframes vanish {
   100% {
     opacity: 0;
