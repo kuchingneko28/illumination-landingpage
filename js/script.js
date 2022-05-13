@@ -56,6 +56,10 @@ window.addEventListener("load", () => {
   loader.classList.add("disppear");
   body.classList.remove("hidden");
 });
+// Lightbox
+lightbox.option({
+  maxWidth: 800,
+});
 
 // Jquery
 $(".owl-carousel").owlCarousel({
