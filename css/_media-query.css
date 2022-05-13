@@ -26,6 +26,12 @@
     text-align: left;
     margin-top: max(17vh, 100px);
   }
+  .hero__content h1 {
+    font-size: 40px;
+  }
+  .hero__content p span {
+    font-size: 22px;
+  }
   .hero__content .desc {
     line-height: 28px;
   }
