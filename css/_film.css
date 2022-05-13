@@ -1,6 +1,7 @@
 /* Films */
 .film {
   /* I don't know what should i add on this line ughhh */
+  color: var(--dark-color);
 }
 
 .film__item img {
