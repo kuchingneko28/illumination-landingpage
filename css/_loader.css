@@ -28,6 +28,7 @@
 }
 .disppear {
   animation: vanish 1s forwards;
+  animation-delay: 3s;
 }
 .hidden {
   overflow: hidden;
