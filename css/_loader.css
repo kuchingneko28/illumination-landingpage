@@ -46,15 +46,6 @@
   background-color: var(--dark-gray-color);
   animation: scaling 2.5s ease-in-out infinite;
 }
-@keyframes scaling {
-  0%,
-  100% {
-    transform: scale(0.2);
-  }
-  50% {
-    transform: scale(1);
-  }
-}
 .loading div:nth-child(1) {
   animation-delay: 0.2s;
 }
@@ -66,6 +57,16 @@
 }
 .loading div:nth-child(4) {
   animation-delay: 0.8s;
+}
+
+@keyframes scaling {
+  0%,
+  100% {
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(1);
+  }
 }
 
 @keyframes vanish {
