@@ -39,23 +39,23 @@
   justify-content: center;
   margin-top: 25px;
 }
-.loading div {
+.loading span {
   width: 18px;
   height: 18px;
   border-radius: 50%;
   background-color: var(--dark-gray-color);
   animation: scaling 2.5s ease-in-out infinite;
 }
-.loading div:nth-child(1) {
+.loading span:nth-child(1) {
   animation-delay: 0.2s;
 }
-.loading div:nth-child(2) {
+.loading span:nth-child(2) {
   animation-delay: 0.4s;
 }
-.loading div:nth-child(3) {
+.loading span:nth-child(3) {
   animation-delay: 0.6s;
 }
-.loading div:nth-child(4) {
+.loading span:nth-child(4) {
   animation-delay: 0.8s;
 }
 
