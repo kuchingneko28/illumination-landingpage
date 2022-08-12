@@ -1,6 +1,6 @@
 # Illumination Landingpage
 
-Trying to slicing my design from figma into real web.
+Trying to slice my design from figma into a real web.
 
 ## Screenshots
 
